@@ -547,6 +547,7 @@ main {
 	}
 
 	#lead-banner {
+		margin-top: -50px;
 		.wrapper {
 			#banner-content {
 				text-align: center;
@@ -600,8 +601,13 @@ main {
 			#left, #right {
 				min-width: 60%;
 				text-align: center;
-				h2, ul {
-
+				ul {
+					li {
+						p{
+							padding: 0;
+						}
+						
+					}
 				}
 			}
 		}
@@ -629,7 +635,7 @@ main {
 					text-align: center;
 				}
 				ul {
-					width: 55%;
+					width: 80%;
 					margin: 0 auto;
 				}
 			}

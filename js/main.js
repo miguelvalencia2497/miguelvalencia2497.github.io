@@ -1,5 +1,5 @@
 $(function(){
-	var aboutOffset = $("#about-me").offset().top;
+	var aboutOffset = $(".about-skills").offset().top;
 	var edexOffset = $("#education-experience").offset().top;
 	var achievementsOffset = $("#achievements").offset().top;
 
@@ -42,7 +42,7 @@ $(function(){
 		    $("header").removeClass("header-scrolled").addClass("header-top");
 		  }
 
-		  if ( $(document).scrollTop() >= (aboutOffset - 80)) {   
+		  if ( $(document).scrollTop() >= (aboutOffset - 200)) {   
 		  	 $('.yellow-bar#1').css({
 		  	 						"-webkit-transition":"all 2s ease",
 								    "-moz-transition":"all 2s ease",
