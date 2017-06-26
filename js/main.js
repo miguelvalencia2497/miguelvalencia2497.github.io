@@ -1,6 +1,7 @@
 $(function(){
 	var aboutOffset = $(".about-skills").offset().top;
-	var edexOffset = $("#education-experience").offset().top;
+	var edOffset = $("#education-experience>.wrapper>#left").offset().top
+	var exOffset = $("#education-experience>.wrapper>#right").offset().top;
 	var achievementsOffset = $("#achievements").offset().top;
 
 	 $('#banner-portrait').css({
@@ -75,7 +76,7 @@ $(function(){
 	       	// $(".yellow-bar").addClass("yellow-bar-full");
 	      }
 
-	      if ( $(document).scrollTop() >= (edexOffset - 200)) {
+	      if ( $(document).scrollTop() >= (edOffset - 300)) {
 	      		$('#education-experience>.wrapper>#left').css({
 					"-webkit-transition":"all 1.5s ease",
 	    			"-moz-transition":"all 1.5s ease",
@@ -83,6 +84,9 @@ $(function(){
 	    			"transition":"all 1.5s ease",
 					"left":"0px"
 				});
+	      }
+
+	      if ( $(document).scrollTop() >= (exOffset - 300)) {
 	      		$('#education-experience>.wrapper>#right').css({
 					"-webkit-transition":"all 1.5s ease",
 	    			"-moz-transition":"all 1.5s ease",

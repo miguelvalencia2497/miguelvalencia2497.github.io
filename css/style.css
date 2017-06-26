@@ -402,7 +402,7 @@ main footer {
     color: #252525; }
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 920px) {
   /*FOR NAV */
   header .wrapper nav ul li:not(:last-child) {
     display: none; }
@@ -446,6 +446,8 @@ main footer {
       min-width: 100%; }
     #about-me .wrapper #about-me-content #left h2, #about-me .wrapper #about-me-content #right h2 {
       text-align: center; }
+  #about-me .wrapper #about-me-content #left {
+    margin-bottom: 50px; }
 
   #education-experience .wrapper #left, #education-experience .wrapper #right {
     min-width: 60%;
@@ -465,6 +467,8 @@ main footer {
   #contact .wrapper #left ul {
     width: 80%;
     margin: 0 auto; }
+    #contact .wrapper #left ul li p {
+      width: 50%; }
   #contact .wrapper #right {
     margin-bottom: 50px; } }
 

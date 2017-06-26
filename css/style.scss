@@ -517,7 +517,7 @@ main {
 
 /* MEDIA QUERIES */
 
-@media only  screen and (max-width: 768px) {
+@media only  screen and (max-width: 920px) {
 	/*FOR NAV */
 	header{
 		.wrapper {
@@ -593,6 +593,9 @@ main {
 						text-align: center;
 					}
 				}
+				#left {
+					margin-bottom: 50px; 
+				}
 			}
 		}
 	}
@@ -638,6 +641,11 @@ main {
 				ul {
 					width: 80%;
 					margin: 0 auto;
+					li {
+						p {
+							width: 50%;
+						}
+					}
 				}
 			}
 			#right {
