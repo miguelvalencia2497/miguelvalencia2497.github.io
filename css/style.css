@@ -240,7 +240,9 @@ main #about-me {
               position: relative;
               top: -25px; }
 main #education-experience {
-  background-image: url("../images/experience-background.png");
+  background-image: url("../images/experience-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center; }
   main #education-experience #left, main #education-experience #right {
     vertical-align: top; }
