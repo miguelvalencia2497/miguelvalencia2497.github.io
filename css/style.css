@@ -422,7 +422,8 @@ main footer {
       #lead-banner .wrapper #banner-content h1, #lead-banner .wrapper #banner-content p {
         margin: 0 auto; }
       #lead-banner .wrapper #banner-content p {
-        margin-bottom: 50px; }
+        margin-bottom: 50px;
+        width: 100%; }
       #lead-banner .wrapper #banner-content img {
         display: none; }
       #lead-banner .wrapper #banner-content #banner-circle {
