@@ -517,7 +517,7 @@ main {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 768px) {
+@media only  screen and (max-width: 991px) {
 	/*FOR NAV */
 	header{
 		.wrapper {
@@ -540,7 +540,7 @@ main {
 		}
 	}
 
-	
+
 
 	.wrapper {
 		width: 90%;

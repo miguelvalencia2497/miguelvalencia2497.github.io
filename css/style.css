@@ -402,7 +402,7 @@ main footer {
     color: #252525; }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
   /*FOR NAV */
   header .wrapper nav ul li:not(:last-child) {
     display: none; }
