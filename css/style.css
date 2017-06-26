@@ -372,7 +372,8 @@ main #contact {
           background: none;
           border: none;
           border-bottom: 2px solid #ffce00;
-          width: 100%; }
+          width: 100%;
+          max-width: 100%; }
         main #contact #right ul li textarea {
           height: 120px; }
         main #contact #right ul li:nth-child(3) {
