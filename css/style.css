@@ -72,7 +72,8 @@ html, body {
 header {
   z-index: 2;
   width: 100%;
-  position: fixed; }
+  position: fixed;
+  overflow: hidden; }
   header h1 {
     font-family: 'Merriweather', serif;
     color: #252525;
@@ -97,7 +98,7 @@ header {
         text-transform: uppercase;
         text-decoration: none; }
       header nav ul li:last-child {
-        padding-right: 0px; }
+        display: none; }
       header nav ul li:hover {
         -webkit-transition: all 0.2s ease;
         -moz-transition: all 0.2s ease;
@@ -148,6 +149,8 @@ main #lead-banner {
     margin-top: -400px;
     position: relative;
     right: -1000px; }
+  main #lead-banner #banner-content #banner-circle {
+    display: none; }
   main #lead-banner #banner-ribbon {
     width: 100%;
     padding: 24px 0;
@@ -397,5 +400,67 @@ main footer {
     letter-spacing: 0.06em;
     font-weight: 300;
     color: #252525; }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+  /*FOR NAV */
+  header .wrapper nav ul li:not(:last-child) {
+    display: none; }
+  header .wrapper nav ul li:last-child {
+    display: block;
+    text-align: center; }
+    header .wrapper nav ul li:last-child a {
+      font-size: 30px; }
+
+  .wrapper {
+    width: 90%; }
+
+  #lead-banner .wrapper #banner-content {
+    text-align: center; }
+    #lead-banner .wrapper #banner-content h1, #lead-banner .wrapper #banner-content p {
+      margin: 0 auto; }
+    #lead-banner .wrapper #banner-content p {
+      margin-bottom: 50px; }
+    #lead-banner .wrapper #banner-content img {
+      display: none; }
+    #lead-banner .wrapper #banner-content #banner-circle {
+      display: block;
+      width: 200px;
+      padding-bottom: 50px;
+      margin: 0 auto;
+      position: relative;
+      right: -1000px; }
+  #lead-banner #banner-ribbon {
+    text-align: center; }
+    #lead-banner #banner-ribbon a {
+      margin: 0 auto; }
+
+  #about-me .wrapper #about-me-content #left, #about-me .wrapper #about-me-content #right {
+    min-width: 100%; }
+    #about-me .wrapper #about-me-content #left h2, #about-me .wrapper #about-me-content #left p, #about-me .wrapper #about-me-content #right h2, #about-me .wrapper #about-me-content #right p {
+      text-align: center;
+      margin: 0 auto;
+      min-width: 100%; }
+    #about-me .wrapper #about-me-content #left h2, #about-me .wrapper #about-me-content #right h2 {
+      text-align: center; }
+
+  #education-experience .wrapper #left, #education-experience .wrapper #right {
+    min-width: 60%;
+    text-align: center; }
+
+  #achievements .wrapper ul li {
+    font-size: 15px;
+    width: 100%;
+    margin-bottom: 50px; }
+
+  #contact .wrapper #left, #contact .wrapper #right {
+    min-width: 100%; }
+  #contact .wrapper #left h2 {
+    text-align: center; }
+  #contact .wrapper #left ul {
+    width: 55%;
+    margin: 0 auto; }
+  #contact .wrapper #right {
+    margin-bottom: 50px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -11,6 +11,14 @@ $(function(){
 		  	 						"right":"0px"
 		  	 					});
 
+	 $('#banner-circle').css({
+		  	 						"-webkit-transition":"all 1.5s ease",
+								    "-moz-transition":"all 1.5s ease",
+								    "-o-transition":"all 1.5s ease",
+								    "transition":"all 1.5s ease",
+		  	 						"right":"0px"
+		  	 					});
+
 	 $('.banner-title').css({
 		  	 						"-webkit-transition":"all 1.5s ease",
 								    "-moz-transition":"all 1.5s ease",
@@ -85,3 +93,8 @@ $(function(){
 	      }
 	});
 });
+
+function toggleBurger() {
+
+    $("header").addClass("responsive");
+}

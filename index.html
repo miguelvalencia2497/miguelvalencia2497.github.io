@@ -13,7 +13,7 @@
 	</head>
 	
 	<body>
-		<header>
+		<header class="topnav" id="myTopnav">
 			<div class="wrapper">
 				<h1>MV</h1>
 				<nav>
@@ -23,6 +23,7 @@
 						<li><a href="#">Experience</a></li>
 						<li><a href="#">Achievements</a></li>
 						<li><a href="#">Contact</a></li>
+						<li><a href="javascript:void(0);" class="burger" onclick="toggleBurger()">&#9776;</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -32,6 +33,7 @@
 			<section id="lead-banner">
 				<div class="wrapper">
 					<div id="banner-content">
+						<img id="banner-circle" src="images/portrait-circle.png">
 						<h1 class="banner-title">HELLO, <span class="thin">I AM MIGUEL</span> VALENCIA</h1>
 						<p class="banner-sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						<img src="images/portrait.png" id="banner-portrait">

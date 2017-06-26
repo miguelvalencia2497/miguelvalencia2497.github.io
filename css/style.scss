@@ -98,6 +98,7 @@ header {
 	z-index: 2;
 	width: 100%;
 	position: fixed;
+	overflow: hidden;
 	h1{
 		font-family: 'Merriweather', serif;
 		color: $color-black;
@@ -127,7 +128,7 @@ header {
 
 				}
 				&:last-child {
-					padding-right: 0px;
+					display: none;
 				}
 				&:hover {
 					-webkit-transition: all 0.2s ease;
@@ -192,6 +193,9 @@ main {
 				margin-top: -400px;
 				position: relative;
 				right: -1000px;
+			}
+			#banner-circle {
+				display: none;
 			}
 		}
 		#banner-ribbon {
@@ -506,6 +510,132 @@ main {
 			font-weight: 300;
 			color: $color-black;
 
+		}
+	}
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+	/*FOR NAV */
+	header{
+		.wrapper {
+			nav {
+				ul {
+					li {
+						&:not(:last-child) {
+							display: none;
+						}
+						&:last-child {
+							display: block;
+							text-align: center;
+							a {
+								font-size: 30px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	
+
+	.wrapper {
+		width: 90%;
+	}
+
+	#lead-banner {
+		.wrapper {
+			#banner-content {
+				text-align: center;
+				h1, p {
+					margin: 0 auto;
+				}
+				p {
+					margin-bottom: 50px;
+				}
+				img {
+					display: none;
+				}
+				#banner-circle {
+					display: block;
+					width: 200px;
+					padding-bottom: 50px;
+					margin: 0 auto;
+					position: relative;
+					right: -1000px;
+				}
+			}
+		}
+		#banner-ribbon {
+			text-align: center;
+			a {
+				margin: 0 auto;
+			}
+		}
+	}
+
+	#about-me {
+		.wrapper {
+			#about-me-content {
+				#left, #right {
+					min-width: 100%;
+					h2, p {
+						text-align: center;
+						margin: 0 auto;
+						min-width: 100%;
+					}
+					h2 {
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+
+	#education-experience {
+		.wrapper {
+			#left, #right {
+				min-width: 60%;
+				text-align: center;
+				h2, ul {
+
+				}
+			}
+		}
+	}
+
+	#achievements {
+		.wrapper {
+			ul {
+				li {
+					font-size: 15px;
+					width: 100%;
+					margin-bottom: 50px;
+				}
+			}
+		}
+	}
+
+	#contact {
+		.wrapper {
+			#left, #right {
+				min-width: 100%;
+			}
+			#left {
+				h2 {
+					text-align: center;
+				}
+				ul {
+					width: 55%;
+					margin: 0 auto;
+				}
+			}
+			#right {
+				margin-bottom: 50px;
+			}
 		}
 	}
 }
