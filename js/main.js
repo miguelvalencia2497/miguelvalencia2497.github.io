@@ -103,4 +103,16 @@ $(function(){
 	    var $anchor = $($href).offset();
 	    $('body').animate({ scrollTop: $anchor.top-50 }, 800);
 	});
+
+	$('#lead-banner>#banner-ribbon>.wrapper>a').mouseenter(function(){
+		$(this).css({
+			"background-color":""
+		});
+	}).mouseleave(function(){
+		$(this).css({
+			"-moz-box-shadow":"inset 0 0 0px #000000",
+   			"-webkit-box-shadow":"inset 0 0 0px #000000",
+   			"box-shadow":"inset 0 0 0px #000000"
+		});
+	});
 });
