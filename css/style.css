@@ -97,8 +97,6 @@ header {
         color: #252525;
         text-transform: uppercase;
         text-decoration: none; }
-      header nav ul li:last-child {
-        display: none; }
       header nav ul li:hover {
         -webkit-transition: all 0.2s ease;
         -moz-transition: all 0.2s ease;
@@ -404,13 +402,13 @@ main footer {
 /* MEDIA QUERIES */
 @media only screen and (max-width: 920px) {
   /*FOR NAV */
-  header .wrapper nav ul li:not(:last-child) {
-    display: none; }
-  header .wrapper nav ul li:last-child {
-    display: block;
-    text-align: center; }
-    header .wrapper nav ul li:last-child a {
-      font-size: 30px; }
+  header {
+    width: 115px; }
+    header .wrapper h1 {
+      padding-right: 10px;
+      padding-left: 10px; }
+    header .wrapper nav ul li {
+      display: none; }
 
   .wrapper {
     width: 90%; }
@@ -448,6 +446,8 @@ main footer {
       text-align: center; }
   #about-me .wrapper #about-me-content #left {
     margin-bottom: 50px; }
+  #about-me .wrapper #about-me-content #right {
+    margin-top: -70px; }
 
   #education-experience .wrapper #left, #education-experience .wrapper #right {
     min-width: 60%;

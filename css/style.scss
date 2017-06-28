@@ -127,9 +127,6 @@ header {
 					text-decoration: none;
 
 				}
-				&:last-child {
-					display: none;
-				}
 				&:hover {
 					-webkit-transition: all 0.2s ease;
 				    -moz-transition: all 0.2s ease;
@@ -520,20 +517,16 @@ main {
 @media only  screen and (max-width: 920px) {
 	/*FOR NAV */
 	header{
+		width: 95px+20px;
 		.wrapper {
+			h1 {
+				padding-right: 10px;
+				padding-left: 10px;
+			}
 			nav {
 				ul {
 					li {
-						&:not(:last-child) {
-							display: none;
-						}
-						&:last-child {
-							display: block;
-							text-align: center;
-							a {
-								font-size: 30px;
-							}
-						}
+						display: none;
 					}
 				}
 			}
@@ -595,6 +588,9 @@ main {
 				}
 				#left {
 					margin-bottom: 50px; 
+				}
+				#right {
+					margin-top:-70px;
 				}
 			}
 		}

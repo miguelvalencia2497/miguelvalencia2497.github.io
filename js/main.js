@@ -96,9 +96,11 @@ $(function(){
 				});
 	      }
 	});
+
+	//SCROLLING
+	$('header').find('a').click(function(){
+	    var $href = $(this).attr('href');
+	    var $anchor = $($href).offset();
+	    $('body').animate({ scrollTop: $anchor.top-50 }, 800);
+	});
 });
-
-function toggleBurger() {
-
-    $("header").addClass("responsive");
-}
