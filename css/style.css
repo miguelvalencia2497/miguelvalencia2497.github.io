@@ -198,7 +198,8 @@ main #about-me {
         width: 80%;
         font-family: "Montserrat", sans-serif;
         font-weight: 300;
-        letter-spacing: 0.06em; }
+        letter-spacing: 0.06em;
+        line-height: 20px; }
     main #about-me .wrapper #about-me-content #right {
       display: inline-block;
       width: 48%;
@@ -216,6 +217,7 @@ main #about-me {
         width: 80%;
         font-weight: 300;
         letter-spacing: 0.06em;
+        line-height: 20px;
         font-family: "Montserrat", sans-serif; }
       main #about-me .wrapper #about-me-content #right ul {
         list-style-type: none;

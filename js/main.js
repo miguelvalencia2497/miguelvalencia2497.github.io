@@ -70,6 +70,13 @@ $(function(){
 								    "-moz-transition":"all 2s ease",
 								    "-o-transition":"all 2s ease",
 								    "transition":"all 2s ease",
+		  	 						"width":"75%"
+		  	 					});
+		  	 $('.yellow-bar#5').css({
+		  	 						"-webkit-transition":"all 2s ease",
+								    "-moz-transition":"all 2s ease",
+								    "-o-transition":"all 2s ease",
+								    "transition":"all 2s ease",
 		  	 						"width":"65%"
 		  	 					});
 		  	 
