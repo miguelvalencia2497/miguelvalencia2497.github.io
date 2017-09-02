@@ -1,0 +1,159 @@
+/* MEDIA QUERIES */
+
+@media only  screen and (max-width: 920px) {
+	/*FOR NAV */
+	header{
+		width: 95px+20px;
+		.wrapper {
+			h1 {
+				padding-right: 10px;
+				padding-left: 10px;
+			}
+			nav {
+				ul {
+					li {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+
+
+	.wrapper {
+		width: 90%;
+	}
+
+	#lead-banner {
+		margin-top: -60px;
+		.wrapper {
+			#banner-content {
+				text-align: center;
+				h1, p {
+					margin: 0 auto;
+				}
+				p {
+					margin-bottom: 50px;
+					width: 100%;
+				}
+				img {
+					display: none;
+				}
+				#banner-circle {
+					display: block;
+					width: 200px;
+					padding-bottom: 50px;
+					margin: 0 auto;
+					position: relative;
+					right: -1000px;
+				}
+			}
+		}
+		#banner-ribbon {
+			text-align: center;
+			a {
+				margin: 0 auto;
+			}
+		}
+	}
+
+	#about-me {
+		.wrapper {
+			#about-me-content {
+				#left, #right {
+					min-width: 100%;
+					h2, p {
+						text-align: center;
+						margin: 0 auto;
+						min-width: 100%;
+					}
+					h2 {
+						text-align: center;
+					}
+				}
+				#left {
+					margin-bottom: 50px;
+				}
+				#right {
+					margin-top:-70px;
+				}
+			}
+		}
+	}
+
+	#education-experience {
+		.wrapper {
+			#left, #right {
+				min-width: 60%;
+				text-align: center;
+				ul {
+					li {
+						p{
+							padding: 0;
+						}
+
+					}
+				}
+			}
+		}
+	}
+
+	#achievements {
+		.wrapper {
+			ul {
+				li {
+					font-size: 15px;
+					width: 100%;
+					margin-bottom: 50px;
+				}
+			}
+		}
+	}
+
+	#contact {
+		.wrapper {
+			#left, #right {
+				min-width: 100%;
+			}
+			#left {
+				h2 {
+					text-align: center;
+				}
+				ul {
+					width: 80%;
+					margin: 0 auto;
+					li {
+						p {
+							width: 50%;
+						}
+					}
+				}
+			}
+			#right {
+				margin-bottom: 50px;
+			}
+		}
+	}
+}
+
+@media only  screen and (max-width: 667px) {
+	#about-me {
+		.wrapper {
+			#about-me-content {
+				h1 {
+					font-size: 20px;
+					width: 180px;
+				}
+			}
+		}
+	}
+	#achievements {
+		.wrapper {
+			h1 {
+				font-size: 20px;
+				width: 180px;
+			}
+		}
+	}
+}

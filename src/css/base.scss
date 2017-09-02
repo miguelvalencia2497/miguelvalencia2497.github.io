@@ -1,0 +1,26 @@
+body {
+	background-color: $color-white;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.thin {
+	font-weight: 300;
+}
+
+.text-yellow {
+	color: $color-yellow;
+}
+
+.text-bold{
+	font-weight: 700;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 852px;
+	margin: 0 auto;
+}
